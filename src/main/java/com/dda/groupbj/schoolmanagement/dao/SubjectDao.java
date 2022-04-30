@@ -16,6 +16,7 @@ public class SubjectDao {
 	@Column(name = "SubjectId")
 	private String subjectId;
 
+	
 	@Column(name = "TeacherId")
 	private int teacherId;
 
