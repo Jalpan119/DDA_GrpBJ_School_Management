@@ -12,17 +12,17 @@ import lombok.Data;
 @Data
 public class TeacherDao {
 
-	    @Id
-	    @Column(name = "TeacherId")
-	    private int teacherId;
+	@Id
+	@Column(name = "TeacherId")
+	private int teacherId;
 
-	    @Column(name = "TeacherName")
-	    private String teacherName;
+	@Column(name = "TeacherName")
+	private String teacherName;
 
-	    @Column(name = "SubjectId")
-	    private int subjectId;
+	@Column(name = "SubjectId")
+	private int subjectId;
 
-	    @Column(name = "PhoneNumber")
-	    private String phoneNumber;
+	@Column(name = "PhoneNumber")
+	private String phoneNumber;
 
 }

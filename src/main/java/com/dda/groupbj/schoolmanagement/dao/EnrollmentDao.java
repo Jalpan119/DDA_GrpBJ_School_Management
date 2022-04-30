@@ -13,16 +13,16 @@ import lombok.Data;
 public class EnrollmentDao {
 
 	@Id
-    @Column(name = "StudentId")
-    private Integer studentId;
-	
+	@Column(name = "StudentId")
+	private Integer studentId;
+
 	@Id
 	@Column(name = "SubjectId")
-    private String subjectId;
-	
+	private String subjectId;
+
 	@Column(name = "Semester")
 	private String semester;
-	
+
 	@Column(name = "Year")
 	private int year;
 

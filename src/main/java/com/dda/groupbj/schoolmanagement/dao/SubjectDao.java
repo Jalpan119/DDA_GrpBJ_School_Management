@@ -11,15 +11,15 @@ import lombok.Data;
 @Table(name = "Subject")
 @Data
 public class SubjectDao {
-	
+
 	@Id
 	@Column(name = "SubjectId")
-    private String subjectId;
-	
-    @Column(name = "TeacherId")
-    private int teacherId; 
+	private String subjectId;
 
-    @Column(name = "ReferenceBooks")
-    private String refernceBooks;
+	@Column(name = "TeacherId")
+	private int teacherId;
+
+	@Column(name = "ReferenceBooks")
+	private String refernceBooks;
 
 }

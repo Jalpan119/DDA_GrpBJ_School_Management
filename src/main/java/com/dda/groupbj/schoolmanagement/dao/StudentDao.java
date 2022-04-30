@@ -13,35 +13,34 @@ import java.sql.Date;
 @Data
 public class StudentDao {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "StudentId")
-    private Integer studentId;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "StudentId")
+	private Integer studentId;
 
-    @Column(name = "StudentName")
-    private String studentName;
+	@Column(name = "StudentName")
+	private String studentName;
 
-    @JsonFormat(pattern = "yyyy/MM/dd")
-    @Column(name = "DOB")
-    private Date dob;
+	@JsonFormat(pattern = "yyyy/MM/dd")
+	@Column(name = "DOB")
+	private Date dob;
 
-    @Column(name = "Gender")
-    private String gender;
+	@Column(name = "Gender")
+	private String gender;
 
-    @Column(name = "Address")
-    private String address;
+	@Column(name = "Address")
+	private String address;
 
-    @Column(name = "createdBy")
-    private String createdBy;
+	@Column(name = "createdBy")
+	private String createdBy;
 
-    @JsonFormat(pattern = "yyyy/MM/dd")
-    @Column(name = "createdDate")
-    private Date createdDate;
+	@JsonFormat(pattern = "yyyy/MM/dd")
+	@Column(name = "createdDate")
+	private Date createdDate;
 
-    @ToString.Exclude
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "ParentId", nullable = false)
-    private ParentDao parent;
-
+	@ToString.Exclude
+	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	@JoinColumn(name = "ParentId", nullable = false)
+	private ParentDao parent;
 
 }

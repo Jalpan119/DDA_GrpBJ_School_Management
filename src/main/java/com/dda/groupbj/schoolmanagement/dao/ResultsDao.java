@@ -13,17 +13,17 @@ import lombok.Data;
 public class ResultsDao {
 
 	@Id
-    @Column(name = "TeacherId")
-    private int teacherId;
+	@Column(name = "TeacherId")
+	private int teacherId;
 
 	@Id
-    @Column(name = "SubjectId")
-    private int subjectId;
+	@Column(name = "SubjectId")
+	private int subjectId;
 
 	@Id
-    @Column(name = "StudentId")
-    private int studentId;
-	
+	@Column(name = "StudentId")
+	private int studentId;
+
 	@Column(name = "Marks")
 	private int marks;
 
